@@ -2,13 +2,15 @@ const https = require('https');
 const fs = require('fs');
 require('colors');
 
-const download = function(url, cb = () => {}) {
+const download = function(url, destFilename, cb = () => {}) {
   https.get(url, res => {
-    const filename = res.headers["content-disposition"].split('filename=')[1].split(';')[0]
-    
-    let file = fs.createWriteStream(filename);
 
-    console.log(`Downloading file ${filename} from ${url}`.green)
+    // Not every url headers have content-disposition
+    // const filename = res.headers["content-disposition"].split('filename=')[1].split(';')[0]
+
+    let file = fs.createWriteStream(destFilename);
+
+    console.log(`Downloading file ${destFilename} from ${url}`.green)
 
     const fileSize = res.headers["content-length"]
     const ld = new LoadingBar(fileSize)
@@ -56,10 +58,11 @@ class LoadingBar {
   }
 }
 
-const [ _, __, url] = process.argv
+const [ _, __, url, filename] = process.argv
 
 if (!url) {
   throw Error("Url of the file to download not specified")
 } else {
-  download(url)
+  if (!filename ) throw Error("Filename of the file to download not specified")
+  download(url, filename)
 }
