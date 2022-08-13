@@ -1,0 +1,32 @@
+{
+  "sad": {
+    "lol": "zz",
+    "woop": "he",
+    "man": {
+      "head": "lol",
+      "body": "sad",
+      "man": {
+        "head": "lol",
+        "beep": {
+          "zz": [
+            "lol1",
+            "lol2",
+            "lol3",
+            "lol4",
+            "lol5"
+          ]
+        },
+        "body": "sad",
+        "foot": "sad"
+      }
+    }
+  },
+  "poop": [
+    "poop1",
+    "poop2"
+  ],
+  "bob": {
+    "bee": "beemovie"
+  },
+  "bee1": "beemovie"
+}

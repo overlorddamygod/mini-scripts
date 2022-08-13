@@ -1,0 +1,15 @@
+{
+  "name": "xml-to-json",
+  "version": "1.0.0",
+  "description": "XML to JSON converter using parser conminator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "overlorddamygod",
+  "license": "MIT",
+  "dependencies": {
+    "arcsecond": "^4.1.0"
+  }
+}

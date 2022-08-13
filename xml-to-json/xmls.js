@@ -1,0 +1,79 @@
+const xml1 = `
+	<sad>
+ 		<hehe>
+	 		<jod>
+				jod1
+			</jod>
+	 	</hehe>
+	 	<hehe>
+			hehe1
+		</hehe>
+		<sad>
+			jooo
+		</sad>
+		<sad>
+			asdasdasd
+		</sad>
+		<sad>
+			asdasdasd1111
+		</sad>
+		<sad>
+			asdasdasd1111
+		</sad>
+	</sad>
+	<bleh>
+ 		blehhh
+	</bleh>
+	<why>
+	 	<lol>
+	 		oops1
+		</lol>
+		<lol>
+	 		oops2
+		</lol>
+	</why>
+`;
+// console.log(run)
+const xml2 = `
+	<sad>
+		<lol>
+	 		zz
+	 	</lol>
+		<woop>he</woop>
+		<man>
+			<head>lol</head>
+			<body>sad</body>
+			<man>
+				<head>lol</head>
+				<beep>
+					<zz>lol1</zz>
+					<zz>lol2</zz>
+					<zz>lol3</zz>
+					<zz>lol4</zz>
+					<zz>lol5</zz>
+				</beep>
+				<body>sad</body>
+				<foot>sad</foot>
+			</man>
+		</man>
+	</sad>
+ <poop>
+ 	poop1
+	</poop>
+ <poop>
+ 	poop2
+	</poop>
+	<bob>
+		<bee>
+ 			beemovie
+ 		</bee>
+	</bob>
+	<bee1>
+ 		beemovie
+ 	</bee1>
+`;
+
+module.exports = {
+  xml1,
+  xml2,
+};
